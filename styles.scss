@@ -1,0 +1,142 @@
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f0f0;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 50%;
+  margin: 20px auto;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 25px;
+  box-sizing: border-box;
+}
+.book {
+  color: #555858;
+
+  .book-cover {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffffc4;
+    box-shadow: 0px 2px 5px lightgray;
+    width: 340px;
+    margin-right: 35px;
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #b32a2b;
+      font-weight: bold;
+      font-size: 1.5em;
+      width: 60px;
+      height: 70px;
+      padding: 0 10px;
+      position: absolute;
+      top: 83.5px;
+      left: 0;
+      z-index: 10;
+      span:nth-child(1) {
+        color: #b32a2b;
+        -webkit-text-stroke: 1px black;
+      }
+      span:nth-child(2) {
+        color: white;
+        -webkit-text-stroke: 1px black;
+      }
+      span:nth-child(3) {
+        color: blue;
+        -webkit-text-stroke: 1px black;
+      }
+    }
+
+    .logo-details {
+      width: 100%;
+      margin: 20px 0;
+      background-color: #2a2727;
+      color: white;
+      height: 60px;
+      box-sizing: border-box;
+      font-size: smaller;
+      padding: 5px 15px 5px 80px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .title {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin: 10px 0;
+      color: blue;
+      padding: 0 20px;
+      width: 100%;
+      box-sizing: border-box;
+      span {
+        color: #b32a2b;
+      }
+      .divider {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-size: 1.2em;
+        color: #b32a2b;
+      }
+      .divider::before,
+      .divider::after {
+        content: "";
+        flex-grow: 1;
+        height: 1px;
+        background-color: black;
+        margin: 0 10px;
+      }
+      .subtitle {
+        text-align: center;
+        font-weight: lighter;
+        font-size: 0.9em;
+        padding: 0 20px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+    }
+    .copyright {
+      text-align: center;
+      font-weight: lighter;
+      font-size: 0.8em;
+      padding: 0 20px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+}
+
+.container .title {
+  font-weight: lighter;
+}
+
+.container .main-img {
+  width: 300px;
+  height: auto;
+  box-shadow: 0px 2px 5px lightgray;
+}
+
+article {
+  .stars {
+    width: 100px;
+  }
+}
